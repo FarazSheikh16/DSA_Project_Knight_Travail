@@ -9,16 +9,15 @@ class Knight
 {
     public:
         Knight();
+        Knight(Position S, Position D);
         void valid_move();
-        int BFS_traversal(Position Start, Position Dest);
-        virtual ~Knight();
-
-    protected:
-
+        int BFS_traversal();
+        ~Knight();
     private:
         int dx[8]={-1 , -2 , -1 , -2 , 1 , 2 , 1 , 2};
         int dy[8]={-2 , -1 , 2 , 1 , -2 , -1 , 2 , 1};
-
+        Position Start;
+        Position Dest;
 };
 
 #endif // KNIGHT_H

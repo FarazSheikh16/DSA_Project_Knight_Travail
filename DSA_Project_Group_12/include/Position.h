@@ -10,7 +10,7 @@ class Position
         Position();
         Position(int x, int y);
         bool valid_coordinates();
-        virtual ~Position();
+        ~Position();
 
     protected:
 

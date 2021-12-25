@@ -7,12 +7,18 @@ Knight::Knight()
     //ctor
 }
 
+Knight:: Knight(Position S, Position D)
+{
+    Start=S;
+    Dest=D;
+}
+
 Knight::~Knight()
 {
     //dtor
 }
 
-int Knight::BFS_traversal(Position Start , Position Dest )
+int Knight::BFS_traversal()
 {
     bool flag[9][9]; // Creating Flag list for checking either the node is visited or not
     for(int i=0; i<9; i++)
@@ -31,8 +37,8 @@ int Knight::BFS_traversal(Position Start , Position Dest )
         {
             Position current= Q.front();
             Q.pop();
-            cout<<"Now traversing the co ordinate"<<endl;
-            cout<<"x="<<current.x_coordinate<<"y="<<current.x_coordinate<<endl;
+            //cout<<"Now traversing the co ordinate"<<endl;
+            //cout<<"x="<<current.x_coordinate<<"y="<<current.x_coordinate<<endl;
             if(current.x_coordinate==Dest.x_coordinate && current.y_coordinate==Dest.y_coordinate)
                 return moves;
             for(int j=0 ; j<8 ; j++)
