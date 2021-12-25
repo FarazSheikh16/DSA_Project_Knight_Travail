@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1640448118 source:e:\dsa lab\dsa_project_group_12\main.cpp
+	<iostream>
+	"Position.h"
+	"Knight.h"
+
+1640447600 source:e:\dsa lab\dsa_project_group_12\src\position.cpp
+	"Position.h"
+	<iostream>
+
+1640418508 e:\dsa lab\dsa_project_group_12\include\position.h
+
+1640447772 source:e:\dsa lab\dsa_project_group_12\src\knight.cpp
+	"Knight.h"
+	<iostream>
+
+1640418508 e:\dsa lab\dsa_project_group_12\include\knight.h
+	"Position.h"
+	<queue>
+
